@@ -2,6 +2,8 @@
 
 A reusable Codex skill for generating a shareable daily AI hotspot intelligence roundup.
 
+The repo is intentionally generic and does not include any user-specific local paths, private vault names, or personal browser-profile locations.
+
 ## What It Does
 
 This skill focuses on the fact-based intelligence layer only:
@@ -48,3 +50,5 @@ By default, the skill is designed to write:
 - `YYYY-MM-DD-AI热点情报汇总.md`
 
 and keep the report neutral and shareable.
+
+The exact output directory should be chosen from the user's own workspace or knowledge base.

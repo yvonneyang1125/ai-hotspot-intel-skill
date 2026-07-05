@@ -7,13 +7,14 @@ description: Produce a shareable AI hotspot intelligence roundup from the last 2
 
 Use this skill to generate the fact-only daily AI hotspot intelligence document.
 
-Default vault:
+## Environment Setup
 
-`/Users/yvonneyang/Desktop/羊会卷/杨一万的知识库`
+Before writing files, identify the user's target knowledge base or workspace.
 
-Default output directory:
+Use a user-provided output directory when available. If none is provided, confirm or infer a local report directory appropriate for the user's environment, such as:
 
-`/Users/yvonneyang/Desktop/羊会卷/杨一万的知识库/AI内容号/06-AI热点日报`
+- `<vault>/AI内容号/06-AI热点日报/`
+- `<workspace>/reports/ai-hotspots/`
 
 ## Use This Skill For
 
@@ -52,9 +53,7 @@ Do not include:
 
 ## Required Sections
 
-Follow the structure in:
-
-`/Users/yvonneyang/Desktop/羊会卷/杨一万的知识库/AI内容号/06-AI热点日报/热点情报模板.md`
+Follow a reusable hotspot-intelligence template when the user already has one in their vault or workspace. If no template exists, preserve the required sections below and generate the document directly.
 
 At minimum, preserve these sections:
 
@@ -69,9 +68,7 @@ At minimum, preserve these sections:
 
 ## Platform Access Rules
 
-Use the dedicated research browser profile when platform login state is needed:
-
-`/Users/yvonneyang/Documents/ds&AI/.browser-profiles/ai-hotspot-research`
+Use a dedicated local research browser profile when platform login state is needed. Prefer a profile reserved for this workflow so login state is reusable but isolated from the user's main browser session.
 
 If access is blocked, login expires, or a captcha appears:
 
@@ -117,4 +114,4 @@ Each item should explain:
 - Keep Chinese concise and scannable
 - Favor links over unsupported claims
 - Avoid copying long third-party text
-- Keep the file useful even when shared outside the Yang Yiwan workflow
+- Keep the file useful when shared outside any single creator workflow
