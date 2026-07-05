@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI 热点情报汇总"
+  short_description: "抓取并汇总可分享的 AI 热点情报与平台公开证据"
+  default_prompt: "Use $ai-hotspot-intel-report to produce today's shareable AI hotspot intelligence roundup with source links, platform observations, and public-search evidence."
+
+policy:
+  allow_implicit_invocation: true
