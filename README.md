@@ -91,6 +91,76 @@ Use $ai-hotspot-intel-report to generate today's AI hotspot intelligence roundup
 用 $ai-hotspot-intel-report 生成今天的 AI 热点情报汇总，覆盖过去 24-72 小时的模型发布、产品更新、社区讨论、GitHub Trending、Hugging Face Papers，以及抖音 / 小红书 / B站的公开搜索结果。输出要保留来源链接、标题、发布时间、可见热度和待补充项。
 ```
 
+## 中文快速开始
+
+### 1. 安装 skill
+
+先把 skill 复制到本地 Codex skills 目录：
+
+```bash
+mkdir -p ~/.codex/skills/ai-hotspot-intel-report
+cp -R ai-hotspot-intel-report/. ~/.codex/skills/ai-hotspot-intel-report/
+```
+
+### 2. 准备输出目录
+
+在你的本地知识库或工作区里准备一个用于存放日报的目录，例如：
+
+```text
+<你的知识库>/AI内容号/06-AI热点日报/
+```
+
+也可以用任意你自己的目录，例如：
+
+```text
+<你的工作区>/reports/ai-hotspots/
+```
+
+### 3. 直接调用
+
+在 Codex 里输入类似下面的话：
+
+```text
+用 $ai-hotspot-intel-report 生成今天的 AI 热点情报汇总，覆盖过去 24-72 小时，输出到 <你的目录>/2026-07-05-AI热点情报汇总.md。
+```
+
+如果你希望强调特定来源，也可以直接补进去：
+
+```text
+用 $ai-hotspot-intel-report 生成今天的 AI 热点情报汇总，重点覆盖 OpenAI、Anthropic、Google DeepMind、GitHub Trending、Hugging Face Papers、Reddit、YouTube，以及抖音 / 小红书 / B站的公开搜索结果。
+```
+
+### 4. 你会得到什么
+
+通常会输出一份中性、可分享的 Markdown 文件，常见内容包括：
+
+- 今日总览
+- 主流平台观察
+- 平台公开搜索记录
+- 热点分组
+- 讨论焦点
+- 可跟进链接
+- 需要你补充/登录的平台
+- 明天继续盯
+
+### 5. 如果平台需要登录
+
+这个 skill 不会绕过登录、验证码、App 限制或反爬限制。
+
+更推荐的做法是：
+
+- 你在本机浏览器里先登录相关平台
+- 保留专用研究浏览器的登录态
+- 或者把截图、链接、导出数据提供给 Codex 再整理
+
+看不到的数据要明确写 `待补充`，不要猜测或编造。
+
+### 6. 一个更完整的中文调用示例
+
+```text
+用 $ai-hotspot-intel-report 生成今天的 AI 热点情报汇总，覆盖过去 24-72 小时。重点关注模型发布、Agent / Workflow、AI 编程、研究与开源、国内外平台视频趋势。请覆盖 OpenAI、Anthropic、Google DeepMind、Meta AI、Microsoft AI、Product Hunt、Hacker News、GitHub Trending、Hugging Face Papers、arXiv，以及抖音 / 小红书 / B站 / YouTube / Reddit / 知乎。输出保存到 <你的目录>/YYYY-MM-DD-AI热点情报汇总.md，并保留来源链接、标题、发布时间、可见热度、讨论焦点和待补充项。
+```
+
 ## Output Convention
 
 By default, the skill is designed to write:
