@@ -48,9 +48,7 @@ Keep the document shareable and neutral. Include:
 
 Do not include:
 
-- "杨一万应该怎么拍"
-- content-angle recommendations for a specific account
-- topic priority judgments aimed at a creator workflow
+- creator-facing topic planning that belongs in a separate content-planning step
 
 ## Required Sections
 
@@ -120,4 +118,3 @@ Each item should explain:
 - Favor links over unsupported claims
 - Avoid copying long third-party text
 - Keep the file useful even when shared outside the Yang Yiwan workflow
-
